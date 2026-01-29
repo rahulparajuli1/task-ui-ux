@@ -11,6 +11,13 @@ body {
   color: white;
 }
 
+/* my name after logo */
+.first-name{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  color: aqua;
+}
+
 /* Navbar */
 .navbar-wrap {
   display: flex;
@@ -62,6 +69,7 @@ body {
   font-size: 60px;
   margin-bottom: 60px;
   font-family: serif;
+  color: rgba(42, 216, 193, 0.855);
 }
 
 .project-grid {
@@ -80,21 +88,25 @@ body {
   margin-top: 15px;
   font-size: 20px;
 }
+.nam{
+  color: #22bab0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
 /* Footer */
 .footer {
   margin-top: 80px;
-  background: #6f6b85;
+  background: #527c9f;
   padding: 25px 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.support-icon {
+.back-to-top {
   width: 60px;
   height: 60px;
-  background: black;
+  background: rgb(48, 93, 65);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -103,26 +115,61 @@ body {
 }
 .profile-card {
   display: inline-flex;
-  flex-direction: column; /* Stacks image and text vertically */
-  align-items: center;    /* Centers items horizontally */
-  text-decoration: none;  /* Removes the default link underline */
-  color: #ffffff;            /* Sets text color */
-  transition: transform 0.2s; /* Adds a little hover effect */
+  flex-direction: column; 
+  align-items: center;    
+  text-decoration: none;  
+  color: #ffffff;            
+  transition: transform 0.2s; 
 }
 
 .profile-card img {
   width: 150px;
   height: 150px;
-  border-radius: 50%;     /* Makes the photo circular */
-  object-fit: cover;      /* Prevents image stretching */
-  margin-bottom: 10px;    /* Space between image and name */
+  border-radius: 50%;     
+  object-fit: cover;     
+  margin-bottom: 10px;    
 }
 
 .profile-card:hover {
-  transform: scale(1.05); /* Slightly grows when hovered */
+  transform: scale(1.05); 
 }
 
 .profile-card span {
   font-weight: bold;
   font-size: 1.2rem;
 }
+html{
+  scroll-behavior: smooth;
+}
+.footer {
+  background-color: #278299; 
+  color: #ffffff;
+  padding: 40px;
+  position: relative;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 10px; */
+}
+.back-to-top {
+  position: fixed;      
+  bottom: 20px;         
+  right: 20px;          
+  z-index: 1000;        
+  cursor: pointer;
+}
+.back-to-top img {
+  width: 40px; 
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.back-to-top:hover img {
+  /* transform: translateY(-5px);  */
+  transform: scale(1.1);
+}
+
