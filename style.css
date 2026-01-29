@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+
+}
+nav ul{
+    list-style-type: none;
+    border: 2px solid skyblue;
+    justify-content: center;
+    display: flex;
+    
+}
