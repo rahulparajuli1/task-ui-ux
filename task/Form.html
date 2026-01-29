@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            margin-left: 15px;
+            padding-left: 35px;
+        }
+
+.styled-button {
+background-color: #4CAF50; /* Green */
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+}
+.styled-button:hover {
+background-color: red; /* Darker Green */
+}
+</style>
+</head>
+<body>
+<button class="styled-button">Styled Button</button>
+</head>
+<body>
+<div class="container">
+<h1>Form example:</h1>
+
+    <form action="" method="post">
+        
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name" value=""> <br><br>
+    
+    <label for="email">Email:</label>
+    <input type="text" id="email" placeholder="Enter your email" value=""><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password"><br><br>
+    <label for="male">Male</label>
+    <input type="radio" id="male" name="gender"> 
+    <label for="female">Female</label>
+    <input type="radio" id="female" name="gender"> 
+    <label for="others">others</label>
+    <input type="radio" id="others" name="gender"> <br><br>
+    <label for="date">Date:</label>
+    <input type="date" id="date"><br><br>
+    <button type="submit">Submit</button><br><br>
+    </div>
+
+    <h2>form type</h2><br><br>
+    <label for="file">File:</label>
+    <input type="file"><br><br>
+    <label for="checkbox">Checkbox:</label>
+    <input type="checkbox"><br><br>
+    <label for="color">Choose Color:</label>
+    <input type="color"><br><br>
+    <label for="month">Choose Month:</label>
+    <input type="month"><br><br>
+    <label for="number">Write number:</label>
+    <input type="number"><br><br>
+    <label for="url">Write url:</label>
+    <input type="url"><br><br>
+    <label for="range">Range:</label>
+    <input type="range"><br><br>
+    <label for="Reser">Reset:</label>
+    <input type="reset"><br><br>
+    <label for="Search">Search</label>
+    <input type="search" placeholder="Search here"><br><br>
+    <label for="button">Button:</label>
+    <input type="button"><br><br>
+    <label for="Submit">Submit:</label>
+    <input type="submit"><br><br>
+    <label for="week">Choose week:</label>
+    <input type="week"><br><br>
+    <label for="time">Choose time:</label>
+    <input type="time"><br><br>
+    <label for="tel">Telephone number:</label>
+    <input type="tel"><br><br>
+
+    </form>
+<!-- Creating form using fieldset  -->
+    <fieldset>
+        <legend>Personal data</legend>
+        <form action="" method="post">
+        <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name" value=""> <br><br>
+    
+    <label for="email">Email:</label>
+    <input type="text" id="email" placeholder="Enter your email" value=""><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password"><br><br>
+    <label for="male">Male</label>
+    <input type="radio" id="male" name="gender"> 
+    <label for="female">Female</label>
+    <input type="radio" id="female" name="gender"> 
+    <label for="others">others</label>
+    <input type="radio" id="others" name="gender"> <br><br>
+    <button type="submit">Submit</button> 
+    </fieldset>
+    </form>
+   
+</body>
+</html>
