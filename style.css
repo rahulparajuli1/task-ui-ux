@@ -99,11 +99,13 @@ body {
   margin-bottom: 60px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   transition: background 0.3s ease;
+  background-color: rgba(159, 102, 28, 0.179);
   color: rgba(42, 216, 193, 0.855);
 }
 .projects h1:hover{
-   transform: scale(1.15);
-   color: #d6d0cf;
+    border: #22bab0 solid 2px;
+  border-radius: 7%;
+  transform: scale(1.05);
 }
 
 .project-grid {
@@ -125,6 +127,12 @@ body {
 .nam{
   color: #22bab0;
   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.nam:hover{
+  border: #22bab0 solid 2px;
+  border-radius: 7%;
+  transform: scale(1.05);
 }
 
 /* Footer */
@@ -163,10 +171,13 @@ body {
   object-fit: cover;     
   margin-bottom: 10px;    
 }
-
-.profile-card:hover {
-  transform: scale(1.05); 
+.profile-card img:hover{
+  border: #22bab0 solid 3px;
+  border-radius: 50%;
+  transform: scale(1.05);
 }
+
+
 
 .profile-card span {
   font-weight: bold;
@@ -187,8 +198,8 @@ html{
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  /* gap: 10px; */
 }
+
 .back-to-top {
   position: fixed;      
   bottom: 20px;         
@@ -196,6 +207,7 @@ html{
   z-index: 1000;        
   cursor: pointer;
 }
+
 .back-to-top img {
   width: 40px; 
   display: block;
