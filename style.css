@@ -61,14 +61,14 @@ body {
 }
 .menu-icon {
   cursor: pointer;
-  /* Smoothly animates the size change */
+  /*  animates  size change */
   transition: transform 0.3s ease;
-  /* Keeps the bars aligned during scaling */
+  /* bars aligned during scaling */
   display: flex;
   flex-direction: column;
 }
 .menu-icon:hover {
-  /* Grows the entire icon by 15% */
+  /* Grows the entire icon by 15% after hover */
   transform: scale(1.15);
 }
 .menu-icon span {
@@ -80,8 +80,8 @@ body {
   transition: background 0.3s ease;
 }
 .menu-icon:hover span {
-  /* Optional: change the color of the bars on hover */
-  background: #000;
+  /* Optional: change the color of the bars after hover */
+  background: #258045;
 }
 
 
@@ -91,11 +91,19 @@ body {
   margin-top: 60px;
 }
 
+
+
+
 .projects h1 {
   font-size: 60px;
   margin-bottom: 60px;
-  font-family: serif;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  transition: background 0.3s ease;
   color: rgba(42, 216, 193, 0.855);
+}
+.projects h1:hover{
+   transform: scale(1.15);
+   color: #d6d0cf;
 }
 
 .project-grid {
