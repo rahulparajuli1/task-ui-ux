@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Login Page</title>
+<style>
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        background: #6b6b6b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+         width: 900px;
+    height: auto;
+    min-height: 450px;
+    background: #f5f5f5;
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+    }
+
+    .left {
+        width: 45%;
+        padding: 50px;
+        background: #ffffff;
+    }
+
+    .left h2 {
+        margin-bottom: 10px;
+        font-size: 26px;
+    }
+
+    .left p {
+        color: #777;
+        margin-bottom: 30px;
+        font-size: 14px;
+    }
+
+    .input-group {
+        margin-bottom: 20px;
+    }
+
+    .input-group label {
+        font-size: 14px;
+        display: block;
+        margin-bottom: 6px;
+    }
+
+    .input-group input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+    }
+
+    .options {
+        display: flex;
+        justify-content: space-between;
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    .options a {
+        text-decoration: none;
+        color: #ff5a3c;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 6px;
+        background: #ff5a3c;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .google-btn {
+        margin-top: 15px;
+        background: #fff;
+        color: #000;
+        border: 1px solid #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .signup {
+      
+        margin-top: 20px;
+        font-size: 13px;
+        text-align: center;
+        /*background: #ff5a3a;*/
+       
+    }
+
+    .signup a {
+      background-color: #ffffff;
+        color: #ff5a3c;
+        text-decoration: none;
+    }
+
+    .right {
+        width: 55%;
+        background: #eaeaea;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right img {
+        max-width: 90%;
+        height: auto;
+    }
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+    <!-- Left Section -->
+    <div class="left">
+        <h2>WELCOME BACK</h2>
+        <p>Welcome back! Please enter your details.</p>
+
+        <div class="input-group">
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email">
+        </div>
+
+        <div class="input-group">
+            <label>Password</label>
+            <input type="password" placeholder="****">
+        </div>
+
+        <div class="options">
+            <label><input type="checkbox"> Remember me</label>
+            <a href="#">Forgot password</a>
+        </div>
+
+        <button class="btn">Sign in</button>
+
+        <button class="btn google-btn">
+            <img src="./image/OIP.webp" width="18">
+            Sign in with Google
+        </button>
+
+        <div class="signup">
+            Don’t have an account? <a href="#">Sign up for free</a>
+        </div>
+    </div>
+
+    <!-- Right Section -->
+    <div class="right">
+        <img src="./image/login img.jpg" alt="Athlete Illustration">
+    </div>
+</div>
+
+</body>
+</html>

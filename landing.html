@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MegaMart</title>
+  <style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f8f9fb;
+}
+
+/* Top Bar */
+.top-bar {
+  background: #f2f2f2;
+  padding: 8px 40px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background: white;
+}
+
+.logo {
+  color: #008ecc;
+}
+.logo span {
+  color: #333;
+}
+
+.header input {
+  width: 40%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.header-icons a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  gap: 15px;
+  padding: 12px 40px;
+  background: white;
+}
+.nav a {
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+}
+
+/* Hero */
+.hero {
+  background: #1e2a4a;
+  color: white;
+  margin: 20px 40px;
+  padding: 40px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero img {
+  width: 250px;
+}
+
+/* Section */
+.section {
+  padding: 20px 40px;
+}
+
+.section h2 span {
+  color: #008ecc;
+}
+
+.s22{
+  padding-bottom: 50px;
+  width:max-content;
+}
+
+/* container */
+
+
+
+/* Products */
+.products {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: 220px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.card.active {
+  border: 2px solid #008ecc;
+}
+
+.card img {
+  width: 100%;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #008ecc;
+  color: white;
+  font-size: 12px;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.price {
+  color: #008ecc;
+  font-weight: bold;
+}
+
+/* Categories */
+.categories {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.cat {
+  background: white;
+  padding: 20px;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* Footer */
+.footer {
+  background: #008ecc;
+  color: white;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.footer ul {
+  list-style: none;
+}
+.footer li {
+  margin: 8px 0;
+}
+
+
+  </style>
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+  <p>Welcome to worldwide Megamart!</p>
+  <div class="top-links">
+    <span>Deliver to 423651</span>
+    <span>Track your order</span>
+    <span>All Offers</span>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="header">
+  <h1 class="logo">Mega<span>Mart</span></h1>
+
+  <input type="text" placeholder="Search essentials, groceries and more..." />
+
+  <div class="header-icons">
+    <a href="#">Sign Up / Sign In</a>
+    <a href="#">Cart</a>
+  </div>
+</header>
+
+<!-- Navigation -->
+<nav class="nav">
+  <a href="#">Groceries</a>
+  <a href="#">Premium Fruits</a>
+  <a href="#">Home & Kitchen</a>
+  <a href="#">Fashion</a>
+  <a href="#">Electronics</a>
+  <a href="#">Beauty</a>
+  <a href="#">Home Improvement</a>
+  <a href="#">Sports, Toys & Luggage</a>
+</nav>
+
+<!-- Hero Banner -->
+<section class="hero">
+  <div class="hero-text">
+    <p>Best Deal Online on smart watches</p>
+    <h2>SMART WEARABLE.</h2>
+    <h3>UP to 80% OFF</h3>
+  </div>
+  <img src="./image/smart watch.png" alt="Smart Watch">
+</section>
+
+<!-- Smartphones -->
+<section class="section">
+  <h2>Grab the best deal on <span>Smartphones</span></h2>
+
+  <div class="products">
+    <div class="card">
+      <span class="badge">56% OFF</span>
+      <img class="s22" src="./image/download-removebg-preview.png" alt="">
+      <h4>Galaxy S22 Ultra</h4>
+      <p class="price">₹32999 <del>₹74999</del></p>
+      <small>Save - ₹32999</small>
+    </div>
+
+    <div class="card active">
+      <span class="badge">56% OFF</span>
+      <img src="./image/m13.png" alt="">
+      <h4>Galaxy M13 (4GB | 64GB)</h4>
+      <p class="price">₹10499 <del>₹14999</del></p>
+      <small>Save - ₹4500</small>
+    </div>
+
+    <div class="card">
+      <span class="badge">56% OFF</span>
+      <img src="./image/m33.png" alt="">
+      <h4>Galaxy M33 (4GB | 64GB)</h4>
+      <p class="price">₹16999 <del>₹24999</del></p>
+      <small>Save - ₹8000</small>
+    </div>
+
+    <div class="card">
+      <span class="badge">56% OFF</span>
+      <img src="./image/m33.png" alt="">
+      <h4>Galaxy M33 (4GB | 64GB)</h4>
+      <p class="price">₹16999 <del>₹24999</del></p>
+      <small>Save - ₹8000</small>
+    </div>
+
+    <div class="card">
+      <span class="badge">56% OFF</span>
+      <img src="./image/m33.png" alt="">
+      <h4>Galaxy M33 (4GB | 64GB)</h4>
+      <p class="price">₹16999 <del>₹24999</del></p>
+      <small>Save - ₹8000</small>
+    </div>
+  </div>
+</section>
+
+<!-- Categories -->
+<section class="section">
+  <h2>Shop From <span>Top Categories</span></h2>
+
+  <div class="categories">
+    <div class="cat">
+      <img src="./image/m13.png" width="30px"> Mobile</div>
+    <div class="cat"> <img src="./image/m13.png" width="30px">Cosmetics</div>
+    <div class="cat"> <img src="./image/m13.png" width="30px">Electronics</div>
+    <div class="cat"> <img src="./image/m13.png" width="30px">Furniture</div>
+    <div class="cat"> <img src="./image/m13.png" width="30px">Watches</div>
+    <div class="cat"> <img src="./image/m13.png" width="30px">Decor</div>
+    <div class="cat"> <img src="./image/m13.png" width="30px">Accessories</div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div>
+    <h3>MegaMart</h3>
+    <p>WhatsApp: +1 202-918-2132</p>
+    <p>Call Us: +1 202-918-2132</p>
+  </div>
+
+  <div>
+    <h4>Most Popular Categories</h4>
+    <ul>
+      <li>Staples</li>
+      <li>Beverages</li>
+      <li>Personal Care</li>
+      <li>Vegetables & Fruits</li>
+    </ul>
+  </div>
+
+  <div>
+    <h4>Customer Services</h4>
+    <ul>
+      <li>About Us</li>
+      <li>Terms & Conditions</li>
+      <li>Privacy Policy</li>
+      <li>Return Policy</li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>

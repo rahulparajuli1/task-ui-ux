@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        /*  Table Styling */
+        .project-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 25px 0;
+            font-size: 0.9em;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-table thead tr {
+            background-color: #009879;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        .project-table th, .project-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #dddddd;
+        }
+
+        /* dark and white strips */
+        .project-table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        /* Status Labels */
+        .status {
+            padding: 5px 10px;
+            border-radius: 4px;
+            color: white;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+        .completed { background-color: #4CAF50; }
+        .pending { background-color: #FF9800; }
+        .in-progress { background-color: #2196F3; }
+
+        /* Hover effect */
+        .project-table tbody tr:hover {
+            background-color: #f1f1f1;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <table class="project-table">
+        <thead>
+            <tr>
+                <th>Project ID</th>
+                <th>Project Name</th>
+                <th>Team Lead</th>
+                <th>Status</th>
+                <th>Deadline</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>#1001</td>
+                <td>Landing page</td>
+                <td>Rahul Parajuli</td>
+                <td><span class="status completed">Completed</span></td>
+                <td>Jan 28, 2026</td>
+            </tr>
+            <tr>
+                <td>#1002</td>
+                <td>Wikipedia page </td>
+                <td>Rahul parajuli</td>
+                <td><span class="status in-progress">In-Progress</span></td>
+                <td>Jan 26, 2026</td>
+            </tr>
+            <tr>
+                <td>#1003</td>
+                <td>Login Page</td>
+                <td>Rahul parajuli</td>
+                <td><span class="status pending">Pending</span></td>
+                <td>Jan 25, 2026</td>
+            </tr>
+             <tr>
+                <td>#1004</td>
+                <td>Landing page</td>
+                <td>Rahul Parajuli</td>
+                <td><span class="status completed">Completed</span></td>
+                <td>Jan 24, 2026</td>
+            </tr>
+             <tr>
+                <td>#1005</td>
+                <td>Landing page</td>
+                <td>Rahul Parajuli</td>
+                <td><span class="status completed">Completed</span></td>
+                <td>Jan 29, 2026</td>
+            </tr>
+             <tr>
+                <td>#1006</td>
+                <td>Landing page</td>
+                <td>Rahul Parajuli</td>
+                <td><span class="status completed">Completed</span></td>
+                <td>Jan 25, 2026</td>
+            </tr>
+             <tr>
+                <td>#1007</td>
+                <td>Landing page</td>
+                <td>Rahul Parajuli</td>
+                <td><span class="status completed">Completed</span></td>
+                <td>Jan 28, 2026</td>
+            </tr>
+             <tr>
+                <td>#1008</td>
+                <td>Landing page</td>
+                <td>Rahul Parajuli</td>
+                <td><span class="status completed">Completed</span></td>
+                <td>Jan 25, 2026</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
