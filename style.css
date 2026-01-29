@@ -51,13 +51,39 @@ body {
   font-size: 18px;
 }
 
+.navbar a:hover {
+  border-radius: 5px;
+  border-width: thick;
+  transform: scale(1.1);
+ 
+  color: #258045; 
+  /* background-color: #22bab0; */
+}
+.menu-icon {
+  cursor: pointer;
+  /* Smoothly animates the size change */
+  transition: transform 0.3s ease;
+  /* Keeps the bars aligned during scaling */
+  display: flex;
+  flex-direction: column;
+}
+.menu-icon:hover {
+  /* Grows the entire icon by 15% */
+  transform: scale(1.15);
+}
 .menu-icon span {
   display: block;
   width: 30px;
   height: 4px;
   background: #666;
   margin: 5px 0;
+  transition: background 0.3s ease;
 }
+.menu-icon:hover span {
+  /* Optional: change the color of the bars on hover */
+  background: #000;
+}
+
 
 /* Projects */
 .projects {
